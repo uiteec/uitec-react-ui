@@ -1,0 +1,11 @@
+services:
+  componentes-react-storybook:
+    image: ghcr.io/uiteec/componentes-react:prod
+    container_name: componentes-react-storybook
+    restart: unless-stopped
+    networks:
+      - psycs-network
+
+networks:
+  psycs-network:
+    external: true

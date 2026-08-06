@@ -3,7 +3,7 @@ import { Mail } from "lucide-react";
 import { ButtonAtom } from "./button.atom";
 
 const meta = {
-  title: "Atoms/ButtonAtom",
+  title: "Atoms/Buttons/ButtonAtom",
   component: ButtonAtom,
   tags: ["autodocs"],
   parameters: {

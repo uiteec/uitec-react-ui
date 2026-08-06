@@ -3,7 +3,7 @@ import { Pencil } from "lucide-react";
 import { BotaoAcaoAtom } from "./botao-acao.atom";
 
 const meta = {
-  title: "Atoms/BotaoAcaoAtom",
+  title: "Atoms/Buttons/BotaoAcaoAtom",
   component: BotaoAcaoAtom,
   tags: ["autodocs"],
   parameters: {

@@ -21,7 +21,7 @@ const dados: Usuario[] = [
 ];
 
 const meta = {
-  title: "Molecules/TabelaMolecule",
+  title: "Molecules/Data/TabelaMolecule",
   component: TabelaMolecule,
   tags: ["autodocs"],
   parameters: {

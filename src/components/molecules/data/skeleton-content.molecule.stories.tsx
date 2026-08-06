@@ -7,7 +7,7 @@ import {
 } from "./skeleton-content.molecule";
 
 const meta = {
-  title: "Molecules/SkeletonContentMolecule",
+  title: "Molecules/Data/SkeletonContentMolecule",
   component: SkeletonTabelaMolecule,
   tags: ["autodocs"],
   parameters: {

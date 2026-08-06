@@ -4,7 +4,7 @@ import { ModalConfirmacaoMolecule } from "./modal-confirmacao.molecule";
 import { ButtonAtom } from "@/components/atoms/buttons";
 
 const meta = {
-  title: "Molecules/ModalConfirmacaoMolecule",
+  title: "Molecules/Feedback/ModalConfirmacaoMolecule",
   component: ModalConfirmacaoMolecule,
   tags: ["autodocs"],
   parameters: {

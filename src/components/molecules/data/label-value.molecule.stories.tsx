@@ -2,7 +2,7 @@ import type { Meta, StoryObj } from "@storybook/react";
 import { LabelValueMolecule } from "./label-value.molecule";
 
 const meta = {
-  title: "Molecules/LabelValueMolecule",
+  title: "Molecules/Data/LabelValueMolecule",
   component: LabelValueMolecule,
   tags: ["autodocs"],
   parameters: {

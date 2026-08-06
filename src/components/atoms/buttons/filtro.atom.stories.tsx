@@ -2,7 +2,7 @@ import type { Meta, StoryObj } from "@storybook/react";
 import { FiltroAtom } from "./filtro.atom";
 
 const meta = {
-  title: "Atoms/FiltroAtom",
+  title: "Atoms/Buttons/FiltroAtom",
   component: FiltroAtom,
   tags: ["autodocs"],
   parameters: {

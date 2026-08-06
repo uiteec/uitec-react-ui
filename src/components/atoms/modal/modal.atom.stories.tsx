@@ -4,7 +4,7 @@ import { ModalAtom } from "./modal.atom";
 import { ButtonAtom } from "../buttons/button.atom";
 
 const meta = {
-  title: "Atoms/ModalAtom",
+  title: "Atoms/Modal/ModalAtom",
   component: ModalAtom,
   tags: ["autodocs"],
   parameters: {

@@ -7,7 +7,7 @@ const filtros: FiltroAtivoItem[] = [
 ];
 
 const meta = {
-  title: "Molecules/FiltrosAtivosMolecule",
+  title: "Molecules/Data/FiltrosAtivosMolecule",
   component: FiltrosAtivosMolecule,
   tags: ["autodocs"],
   parameters: {

@@ -3,7 +3,7 @@ import { useState } from "react";
 import { PaginacaoMolecule } from "./paginacao.molecule";
 
 const meta = {
-  title: "Molecules/PaginacaoMolecule",
+  title: "Molecules/Data/PaginacaoMolecule",
   component: PaginacaoMolecule,
   tags: ["autodocs"],
   parameters: {

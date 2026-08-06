@@ -9,7 +9,7 @@ const breadcrumbs: BreadcrumbItem[] = [
 ];
 
 const meta = {
-  title: "Molecules/PageHeaderMolecule",
+  title: "Molecules/Layout/PageHeaderMolecule",
   component: PageHeaderMolecule,
   tags: ["autodocs"],
   parameters: {

@@ -9,7 +9,7 @@ const schema = z.object({
 });
 
 const meta = {
-  title: "Molecules/FormControlMolecule",
+  title: "Molecules/Form/FormControlMolecule",
   component: FormControlMolecule,
   tags: ["autodocs"],
   parameters: {

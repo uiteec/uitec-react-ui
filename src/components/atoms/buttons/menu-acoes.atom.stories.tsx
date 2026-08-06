@@ -9,7 +9,7 @@ const itens: MenuAcaoItem[] = [
 ];
 
 const meta = {
-  title: "Atoms/MenuAcoesAtom",
+  title: "Atoms/Buttons/MenuAcoesAtom",
   component: MenuAcoesAtom,
   tags: ["autodocs"],
   parameters: {

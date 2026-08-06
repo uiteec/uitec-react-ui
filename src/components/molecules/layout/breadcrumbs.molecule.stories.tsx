@@ -8,7 +8,7 @@ const items: BreadcrumbItem[] = [
 ];
 
 const meta = {
-  title: "Molecules/BreadcrumbsMolecule",
+  title: "Molecules/Layout/BreadcrumbsMolecule",
   component: BreadcrumbsMolecule,
   tags: ["autodocs"],
   parameters: {
