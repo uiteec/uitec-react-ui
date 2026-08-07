@@ -7,6 +7,10 @@ export { FormTextareaAtom } from "./form-textarea.atom";
 
 // Máscaras
 export { FormPhoneAtom } from "./form-phone.atom";
+export { FormCPFAtom } from "./form-cpf.atom";
+export { FormCNPJAtom } from "./form-cnpj.atom";
+export { FormCEPAtom } from "./form-cep.atom";
+export { FormCRPAtom } from "./form-crp.atom";
 
 // Financeiro
 export { FormCoinAtom } from "./form-coin.atom";

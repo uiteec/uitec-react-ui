@@ -6,7 +6,7 @@ import { type z, type ZodObject, type ZodTypeAny } from "zod";
 import { cn } from "@/lib/utils";
 import {
   FormTextAtom, FormEmailAtom, FormPasswordAtom, FormNumberAtom, FormTextareaAtom,
-  FormPhoneAtom,
+  FormPhoneAtom, FormCPFAtom, FormCNPJAtom, FormCEPAtom, FormCRPAtom,
   FormCoinAtom, FormDecimalAtom, FormCreditCardAtom,
   FormDateAtom, FormTimepickerAtom, FormDateRangeAtom,
   FormSelectAtom, FormSelectCheckboxAtom, FormSelectChipAtom,
@@ -24,6 +24,10 @@ const COMPONENT_MAP = {
   number:           FormNumberAtom,
   textarea:         FormTextareaAtom,
   phone:            FormPhoneAtom,
+  cpf:              FormCPFAtom,
+  cnpj:             FormCNPJAtom,
+  cep:              FormCEPAtom,
+  crp:              FormCRPAtom,
   // Financeiro
   coin:             FormCoinAtom,
   decimal:          FormDecimalAtom,
