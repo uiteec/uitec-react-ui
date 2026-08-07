@@ -18,7 +18,7 @@ const preview: Preview = {
       defaultTheme: "claro",
     }),
     (Story) => (
-      <div style={{ padding: "1.5rem", background: "var(--background-page)", minHeight: "100vh" }}>
+      <div style={{ padding: "1.5rem", background: "var(--background-page)" }}>
         <Story />
       </div>
     ),
