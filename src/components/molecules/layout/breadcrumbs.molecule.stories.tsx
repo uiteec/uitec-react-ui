@@ -14,7 +14,7 @@ const meta = {
   parameters: {
     docs: {
       description: {
-        component: '```tsx\nimport { BreadcrumbsMolecule } from "componentes-react";\n```',
+        component: '```tsx\nimport { BreadcrumbsMolecule } from "uitec-react-ui";\n```',
       },
     },
   },

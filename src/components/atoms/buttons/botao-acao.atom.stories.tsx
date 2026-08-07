@@ -9,7 +9,7 @@ const meta = {
   parameters: {
     docs: {
       description: {
-        component: '```tsx\nimport { BotaoAcaoAtom } from "componentes-react";\n```',
+        component: '```tsx\nimport { BotaoAcaoAtom } from "uitec-react-ui";\n```',
       },
     },
   },

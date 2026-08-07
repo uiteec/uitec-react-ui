@@ -13,7 +13,7 @@ const meta = {
   parameters: {
     docs: {
       description: {
-        component: '```tsx\nimport { FiltrosAtivosMolecule } from "componentes-react";\n```',
+        component: '```tsx\nimport { FiltrosAtivosMolecule } from "uitec-react-ui";\n```',
       },
     },
   },

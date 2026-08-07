@@ -16,7 +16,7 @@ const meta = {
   parameters: {
     docs: {
       description: {
-        component: '```tsx\nimport { FormSelectChipAtom } from "componentes-react";\n```',
+        component: '```tsx\nimport { FormSelectChipAtom } from "uitec-react-ui";\n```',
       },
     },
   },

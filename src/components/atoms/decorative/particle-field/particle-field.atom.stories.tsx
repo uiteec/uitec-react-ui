@@ -8,7 +8,7 @@ const meta = {
   parameters: {
     docs: {
       description: {
-        component: '```tsx\nimport { ParticleFieldAtom } from "componentes-react";\n```',
+        component: '```tsx\nimport { ParticleFieldAtom } from "uitec-react-ui";\n```',
       },
     },
   },

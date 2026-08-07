@@ -8,7 +8,7 @@ const meta = {
   parameters: {
     docs: {
       description: {
-        component: '```tsx\nimport { BadgeAtom } from "componentes-react";\n```',
+        component: '```tsx\nimport { BadgeAtom } from "uitec-react-ui";\n```',
       },
     },
   },

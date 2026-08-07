@@ -8,7 +8,7 @@ const meta = {
   parameters: {
     docs: {
       description: {
-        component: '```tsx\nimport { AlertAtom } from "componentes-react";\n```',
+        component: '```tsx\nimport { AlertAtom } from "uitec-react-ui";\n```',
       },
     },
   },

@@ -14,7 +14,7 @@ const meta = {
     docs: {
       description: {
         component:
-          '```tsx\nimport {\n  SkeletonTabelaMolecule,\n  SkeletonListaMolecule,\n  SkeletonCardsMolecule,\n  SkeletonFormMolecule,\n} from "componentes-react";\n```\n\nConjunto de placeholders de carregamento para os principais layouts de conteúdo: tabela, lista, cards e formulário.',
+          '```tsx\nimport {\n  SkeletonTabelaMolecule,\n  SkeletonListaMolecule,\n  SkeletonCardsMolecule,\n  SkeletonFormMolecule,\n} from "uitec-react-ui";\n```\n\nConjunto de placeholders de carregamento para os principais layouts de conteúdo: tabela, lista, cards e formulário.',
       },
     },
   },

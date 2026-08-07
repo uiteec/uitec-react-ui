@@ -10,7 +10,7 @@ const meta = {
   parameters: {
     docs: {
       description: {
-        component: '```tsx\nimport { ModalAtom } from "componentes-react";\n```',
+        component: '```tsx\nimport { ModalAtom } from "uitec-react-ui";\n```',
       },
     },
   },

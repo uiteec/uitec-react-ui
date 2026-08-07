@@ -15,7 +15,7 @@ const meta = {
     docs: {
       description: {
         component:
-          '```tsx\nimport { IconeAtom } from "componentes-react";\n```\n\n' +
+          '```tsx\nimport { IconeAtom } from "uitec-react-ui";\n```\n\n' +
           "⚠️ **Atenção:** `IconeAtom` renderiza um `<img>` a partir de um `src` de arquivo estático — ele **não empacota nenhum ícone junto**. " +
           "O componente foi originalmente feito pra carregar SVGs de `/public/assets/icones/*` do app consumidor. " +
           "Se o seu projeto não tiver esses arquivos nesse caminho, passe qualquer URL válida (asset próprio, CDN, ou uma data URI como nesta story) em `src`. " +

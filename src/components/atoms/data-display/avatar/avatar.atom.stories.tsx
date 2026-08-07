@@ -8,7 +8,7 @@ const meta = {
   parameters: {
     docs: {
       description: {
-        component: '```tsx\nimport { AvatarAtom } from "componentes-react";\n```',
+        component: '```tsx\nimport { AvatarAtom } from "uitec-react-ui";\n```',
       },
     },
   },

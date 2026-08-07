@@ -9,7 +9,7 @@ const meta = {
   parameters: {
     docs: {
       description: {
-        component: '```tsx\nimport { SearchInputAtom } from "componentes-react";\n```',
+        component: '```tsx\nimport { SearchInputAtom } from "uitec-react-ui";\n```',
       },
     },
   },

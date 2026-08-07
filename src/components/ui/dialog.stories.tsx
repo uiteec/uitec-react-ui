@@ -19,7 +19,7 @@ const meta = {
     docs: {
       description: {
         component:
-          '```tsx\nimport {\n  Dialog,\n  DialogTrigger,\n  DialogContent,\n  DialogHeader,\n  DialogTitle,\n  DialogDescription,\n  DialogFooter,\n  DialogClose,\n} from "componentes-react";\n```\n\nPrimitiva de diálogo modal baseada em Radix UI, no padrão shadcn.',
+          '```tsx\nimport {\n  Dialog,\n  DialogTrigger,\n  DialogContent,\n  DialogHeader,\n  DialogTitle,\n  DialogDescription,\n  DialogFooter,\n  DialogClose,\n} from "uitec-react-ui";\n```\n\nPrimitiva de diálogo modal baseada em Radix UI, no padrão shadcn.',
       },
     },
   },

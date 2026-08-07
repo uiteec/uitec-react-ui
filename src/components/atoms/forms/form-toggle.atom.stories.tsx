@@ -10,7 +10,7 @@ const meta = {
   parameters: {
     docs: {
       description: {
-        component: '```tsx\nimport { FormToggleAtom } from "componentes-react";\n```',
+        component: '```tsx\nimport { FormToggleAtom } from "uitec-react-ui";\n```',
       },
     },
   },

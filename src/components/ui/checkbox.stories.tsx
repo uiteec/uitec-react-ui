@@ -9,7 +9,7 @@ const meta = {
   parameters: {
     docs: {
       description: {
-        component: '```tsx\nimport { Checkbox } from "componentes-react";\n```',
+        component: '```tsx\nimport { Checkbox } from "uitec-react-ui";\n```',
       },
     },
   },

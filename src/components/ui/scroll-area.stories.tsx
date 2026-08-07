@@ -8,7 +8,7 @@ const meta = {
   parameters: {
     docs: {
       description: {
-        component: '```tsx\nimport { ScrollArea } from "componentes-react";\n```',
+        component: '```tsx\nimport { ScrollArea } from "uitec-react-ui";\n```',
       },
     },
   },

@@ -9,7 +9,7 @@ const meta = {
   parameters: {
     docs: {
       description: {
-        component: '```tsx\nimport { PaginacaoMolecule } from "componentes-react";\n```',
+        component: '```tsx\nimport { PaginacaoMolecule } from "uitec-react-ui";\n```',
       },
     },
   },

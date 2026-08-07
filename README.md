@@ -7,7 +7,7 @@ Design system React da UITEC — biblioteca de componentes de UI (atoms/molecule
 ## Instalação
 
 ```bash
-npm install componentes-react
+npm install uitec-react-ui
 ```
 
 Peer dependencies necessárias no projeto consumidor: `react`, `react-dom` e `next` (usado por componentes como `BreadcrumbsMolecule`, que usa `next/link`).
@@ -17,7 +17,7 @@ Peer dependencies necessárias no projeto consumidor: `react`, `react-dom` e `ne
 Importe o CSS do pacote **uma vez**, na raiz da aplicação (ex: `app/layout.tsx` no Next.js):
 
 ```tsx
-import "componentes-react/styles.css";
+import "uitec-react-ui/styles.css";
 ```
 
 Esse CSS já traz os tokens de tema (cores, tipografia, animações) e as classes utilitárias Tailwind usadas pelos componentes — o projeto consumidor **não precisa ter Tailwind configurado** para os componentes funcionarem.
@@ -25,7 +25,7 @@ Esse CSS já traz os tokens de tema (cores, tipografia, animações) e as classe
 Depois é só importar e usar:
 
 ```tsx
-import { ButtonAtom, CardAtom, BadgeAtom } from "componentes-react";
+import { ButtonAtom, CardAtom, BadgeAtom } from "uitec-react-ui";
 
 export function Exemplo() {
   return (
@@ -74,9 +74,31 @@ pnpm typecheck
 
 ## Publicação
 
-1. Suba a versão: `npm version patch|minor|major`
-2. Dê push da tag gerada: `git push --follow-tags`
-3. O workflow `.github/workflows/publish.yml` publica automaticamente no npm ao detectar uma tag `vX.Y.Z` (precisa do secret `NPM_TOKEN` configurado no repositório, gerado em [npmjs.com](https://www.npmjs.com/) → Access Tokens).
+O pacote já está publicado como [`uitec-react-ui`](https://www.npmjs.com/package/uitec-react-ui) no npm público.
+
+### Fluxo normal (automático, sem OTP)
+
+1. Suba a versão: `npm version patch|minor|major` (isso já cria a tag git correspondente).
+2. Dê push da tag gerada: `git push --follow-tags`.
+3. O workflow `.github/workflows/publish.yml` builda e publica automaticamente no npm ao detectar uma tag `vX.Y.Z`, usando o secret `NPM_TOKEN` do repositório — nenhuma interação manual (sem OTP) é necessária.
+
+### Configurar o secret `NPM_TOKEN` (setup único)
+
+1. Em [npmjs.com](https://www.npmjs.com) → avatar → **Access Tokens** → **Generate New Token** → **Granular Access Token**.
+2. **Permissions**: Read and write. **Packages and scopes**: `uitec-react-ui`. Ativar **"Bypass two-factor authentication"**.
+3. Copiar o token gerado (`npm_...`, só aparece uma vez).
+4. No GitHub → repositório → **Settings** → **Secrets and variables** → **Actions** → **New repository secret** → nome `NPM_TOKEN`, valor o token copiado.
+
+### Publicação manual (fallback, exige OTP)
+
+Se precisar publicar direto da sua máquina sem passar pelo Actions:
+
+```bash
+pnpm run build
+npm publish
+```
+
+Isso vai pedir autenticação (`npm login`) e um código OTP do seu autenticador a cada publish, já que a sessão de login normal do npm não tem bypass de 2FA — só o token granular configurado acima tem.
 
 O deploy do Storybook (GitHub Pages) acontece automaticamente a cada push em `main`, via `.github/workflows/storybook.yml`.
 

@@ -10,7 +10,7 @@ const meta = {
   parameters: {
     docs: {
       description: {
-        component: '```tsx\nimport { FormDecimalAtom } from "componentes-react";\n```',
+        component: '```tsx\nimport { FormDecimalAtom } from "uitec-react-ui";\n```',
       },
     },
   },

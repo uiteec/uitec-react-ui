@@ -15,7 +15,7 @@ const meta = {
   parameters: {
     docs: {
       description: {
-        component: '```tsx\nimport { PageHeaderMolecule } from "componentes-react";\n```',
+        component: '```tsx\nimport { PageHeaderMolecule } from "uitec-react-ui";\n```',
       },
     },
   },

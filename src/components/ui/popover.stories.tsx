@@ -10,7 +10,7 @@ const meta = {
     docs: {
       description: {
         component:
-          '```tsx\nimport { Popover, PopoverTrigger, PopoverContent } from "componentes-react";\n```\n\nPrimitiva de popover baseada em Radix UI, no padrão shadcn.',
+          '```tsx\nimport { Popover, PopoverTrigger, PopoverContent } from "uitec-react-ui";\n```\n\nPrimitiva de popover baseada em Radix UI, no padrão shadcn.',
       },
     },
   },

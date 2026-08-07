@@ -15,7 +15,7 @@ const meta = {
   parameters: {
     docs: {
       description: {
-        component: '```tsx\nimport { MenuAcoesAtom } from "componentes-react";\n```',
+        component: '```tsx\nimport { MenuAcoesAtom } from "uitec-react-ui";\n```',
       },
     },
   },

@@ -8,7 +8,7 @@ const meta = {
   parameters: {
     docs: {
       description: {
-        component: '```tsx\nimport { ScanLineAtom } from "componentes-react";\n```',
+        component: '```tsx\nimport { ScanLineAtom } from "uitec-react-ui";\n```',
       },
     },
   },

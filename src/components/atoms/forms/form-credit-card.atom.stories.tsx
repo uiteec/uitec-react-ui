@@ -10,7 +10,7 @@ const meta = {
   parameters: {
     docs: {
       description: {
-        component: '```tsx\nimport { FormCreditCardAtom } from "componentes-react";\n```',
+        component: '```tsx\nimport { FormCreditCardAtom } from "uitec-react-ui";\n```',
       },
     },
   },

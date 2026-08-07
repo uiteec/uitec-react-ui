@@ -27,7 +27,7 @@ const meta = {
   parameters: {
     docs: {
       description: {
-        component: '```tsx\nimport { TabelaMolecule } from "componentes-react";\n```',
+        component: '```tsx\nimport { TabelaMolecule } from "uitec-react-ui";\n```',
       },
     },
   },

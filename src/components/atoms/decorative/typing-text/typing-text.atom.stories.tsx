@@ -8,7 +8,7 @@ const meta = {
   parameters: {
     docs: {
       description: {
-        component: '```tsx\nimport { TypingTextAtom } from "componentes-react";\n```',
+        component: '```tsx\nimport { TypingTextAtom } from "uitec-react-ui";\n```',
       },
     },
   },

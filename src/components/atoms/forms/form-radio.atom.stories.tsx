@@ -16,7 +16,7 @@ const meta = {
   parameters: {
     docs: {
       description: {
-        component: '```tsx\nimport { FormRadioAtom } from "componentes-react";\n```',
+        component: '```tsx\nimport { FormRadioAtom } from "uitec-react-ui";\n```',
       },
     },
   },

@@ -10,7 +10,7 @@ const meta = {
   parameters: {
     docs: {
       description: {
-        component: '```tsx\nimport { FormTextareaAtom } from "componentes-react";\n```',
+        component: '```tsx\nimport { FormTextareaAtom } from "uitec-react-ui";\n```',
       },
     },
   },

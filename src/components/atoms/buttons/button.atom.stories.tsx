@@ -9,7 +9,7 @@ const meta = {
   parameters: {
     docs: {
       description: {
-        component: '```tsx\nimport { ButtonAtom } from "componentes-react";\n```',
+        component: '```tsx\nimport { ButtonAtom } from "uitec-react-ui";\n```',
       },
     },
   },

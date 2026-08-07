@@ -10,7 +10,7 @@ const meta = {
   parameters: {
     docs: {
       description: {
-        component: '```tsx\nimport { FormTimepickerAtom } from "componentes-react";\n```',
+        component: '```tsx\nimport { FormTimepickerAtom } from "uitec-react-ui";\n```',
       },
     },
   },
