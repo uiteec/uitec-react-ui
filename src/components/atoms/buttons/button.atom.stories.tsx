@@ -50,6 +50,7 @@ export const Variantes: Story = {
       <ButtonAtom text="Ghost" variant="ghost" />
       <ButtonAtom text="Link" variant="link" />
       <ButtonAtom text="Danger" variant="danger" />
+      <ButtonAtom text="Success" variant="success" />
     </div>
   ),
 };

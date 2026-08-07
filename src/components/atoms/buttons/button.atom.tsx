@@ -4,7 +4,7 @@ import { type ButtonHTMLAttributes, type ReactNode } from "react";
 import { type LucideIcon } from "lucide-react";
 import { cn } from "@/lib/utils";
 
-export type ButtonVariant = "primary" | "secondary" | "outline" | "ghost" | "link" | "danger";
+export type ButtonVariant = "primary" | "secondary" | "outline" | "ghost" | "link" | "danger" | "success";
 export type ButtonSize    = "sm" | "md" | "lg";
 
 interface ButtonAtomProps extends ButtonHTMLAttributes<HTMLButtonElement> {
@@ -51,6 +51,12 @@ const variantStyles: Record<ButtonVariant, { bg: string; color: string; border: 
   },
   danger: {
     bg:         "var(--error-300, #dc2626)",
+    color:      "white",
+    border:     "transparent",
+    hoverClass: "hover:opacity-85",
+  },
+  success: {
+    bg:         "var(--success-300, #4bb260)",
     color:      "white",
     border:     "transparent",
     hoverClass: "hover:opacity-85",

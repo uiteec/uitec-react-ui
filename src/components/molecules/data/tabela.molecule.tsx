@@ -115,7 +115,14 @@ export function TabelaMolecule<T>({
         {dados.map((item, idx) => (
           <tr
             key={getKey(item)}
-            onClick={() => onRowClick?.(item)}
+            onClick={(e) => {
+              if (!onRowClick) return;
+              const target = e.target as HTMLElement;
+              const isInteractive = !!target.closest("button, a, [role=button], [data-no-row-click]");
+              if (!isInteractive) {
+                onRowClick(item);
+              }
+            }}
             className={cn(
               "transition-colors",
               onRowClick && "cursor-pointer hover:bg-background-hover",

@@ -50,9 +50,11 @@ function DialogContent({
   className,
   children,
   showCloseButton = true,
+  centered = false,
   ...props
 }: React.ComponentProps<typeof DialogPrimitive.Content> & {
   showCloseButton?: boolean;
+  centered?: boolean;
 }) {
   return (
     <DialogPortal>
@@ -70,7 +72,12 @@ function DialogContent({
           tabIndex={-1}
         />
 
-        <div className="relative flex min-h-full items-start justify-center p-6 sm:py-12 pointer-events-none">
+        <div
+          className={cn(
+            "relative flex min-h-full justify-center p-6 sm:py-12 pointer-events-none",
+            centered ? "items-center" : "items-start",
+          )}
+        >
           <div
             className={cn(
               "pointer-events-auto relative w-full max-w-lg grid gap-4 rounded-2xl border border-background-divisor bg-background-modal p-6 shadow-2xl",
