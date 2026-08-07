@@ -24,7 +24,8 @@ export function TooltipAtom({ content, children, placement = "top", className }:
       {children}
       <span
         className={cn(
-          "absolute z-50 px-2 py-1 text-xs font-medium rounded-lg whitespace-nowrap pointer-events-none",
+          "absolute z-50 px-2 py-1 text-xs font-medium rounded-lg pointer-events-none",
+          "max-w-64 whitespace-normal text-left wrap-break-word",
           "opacity-0 group-hover/tt:opacity-100 transition-opacity duration-150",
           PLACEMENT[placement],
         )}

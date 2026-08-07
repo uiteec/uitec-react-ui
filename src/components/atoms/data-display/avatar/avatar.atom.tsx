@@ -1,5 +1,6 @@
 "use client";
 
+import { useState } from "react";
 import { cn } from "@/lib/utils";
 
 export type AvatarSize = "xs" | "sm" | "md" | "lg" | "xl";
@@ -33,15 +34,16 @@ function getInitials(name?: string): string {
 export function AvatarAtom({ src, name, size = "md", shape = "circle", online, className }: AvatarAtomProps) {
   const { px, text, dot } = SIZE_MAP[size];
   const rounded = shape === "square" ? "rounded-lg" : "rounded-full";
+  const [erro, setErro] = useState(false);
   return (
     <div className={cn("relative inline-flex shrink-0", rounded, className)}>
       <div
         className={cn("overflow-hidden flex items-center justify-center font-semibold", rounded, text)}
         style={{ width: px, height: px, background: "var(--primary-contrast)", color: "var(--primary-default)" }}
       >
-        {src ? (
+        {src && !erro ? (
           // eslint-disable-next-line @next/next/no-img-element
-          <img src={src} alt={name ?? "avatar"} className="w-full h-full object-cover" />
+          <img src={src} alt={name ?? "avatar"} className="w-full h-full object-cover" onError={() => setErro(true)} />
         ) : (
           getInitials(name)
         )}
