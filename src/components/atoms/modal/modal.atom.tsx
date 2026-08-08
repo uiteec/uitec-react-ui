@@ -4,7 +4,7 @@ import { X } from "lucide-react";
 import { type ReactNode, useEffect } from "react";
 import { cn } from "@/lib/utils";
 
-export type ModalSize = "sm" | "md" | "lg" | "xl";
+export type ModalSize = "sm" | "md" | "lg" | "xl" | "full";
 
 export interface ModalAtomProps {
   open: boolean;
@@ -22,6 +22,7 @@ const SIZE_MAP: Record<ModalSize, string> = {
   md: "max-w-lg",
   lg: "max-w-2xl",
   xl: "max-w-4xl",
+  full: "max-w-5xl",
 };
 
 export function ModalAtom({
