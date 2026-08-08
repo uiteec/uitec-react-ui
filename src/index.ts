@@ -5,6 +5,7 @@ export * from "./components/atoms/buttons";
 export * from "./components/atoms/forms";
 export * from "./components/atoms/modal";
 export * from "./components/atoms/decorative";
+export * from "./components/atoms/tabs";
 
 // Molecules
 export * from "./components/molecules/data";
