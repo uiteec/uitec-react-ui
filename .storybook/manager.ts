@@ -3,7 +3,7 @@ import { create } from "storybook/internal/theming/create";
 import pkg from "../package.json";
 
 const theme = create({
-  base: "light",
+  base: "dark",
   brandTitle: `uitec-react-ui v${pkg.version}`,
 });
 
