@@ -15,3 +15,6 @@ export type { TabelaColuna } from "./tabela.molecule";
 
 export { FiltrosAtivosMolecule } from "./filtros-ativos.molecule";
 export type { FiltroAtivoItem } from "./filtros-ativos.molecule";
+
+export { StatCardMolecule } from "./stat-card.molecule";
+export { StatBreakdownCardMolecule } from "./stat-breakdown-card.molecule";
