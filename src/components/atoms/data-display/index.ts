@@ -9,6 +9,8 @@ export type { CardPadding } from "./card";
 
 export { IconeAtom } from "./icone";
 
+export { MarkdownTextoAtom } from "./markdown-texto";
+
 export { TextAtom } from "./text";
 export type { TextVariant, TextColor } from "./text";
 

@@ -42,7 +42,7 @@ export function FormCEPAtom({ control, name, placeholder = "_____-___", disabled
               className
             )}
             style={{
-              background: disabled ? "var(--background-page)" : "white",
+              background: disabled ? "var(--background-page)" : "var(--background-card)",
               border: isInvalid ? "1.5px solid var(--error-300)" : "1.5px solid var(--background-stroke)",
               color: "var(--font-default)",
             }}

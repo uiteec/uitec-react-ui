@@ -38,7 +38,7 @@ export function FormCNPJAtom({ control, name, placeholder = "__.___.___/____-__"
           maxLength={18}
           className={cn("w-full h-10 px-3 rounded-lg text-sm outline-none transition-all", disabled && "opacity-60 cursor-not-allowed", className)}
           style={{
-            background: disabled ? "var(--background-page)" : "white",
+            background: disabled ? "var(--background-page)" : "var(--background-card)",
             border: isInvalid ? "1.5px solid var(--error-300)" : "1.5px solid var(--background-stroke)",
             color: "var(--font-default)",
           }}
