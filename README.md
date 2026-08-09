@@ -101,17 +101,3 @@ npm publish
 Isso vai pedir autenticação (`npm login`) e um código OTP do seu autenticador a cada publish, já que a sessão de login normal do npm não tem bypass de 2FA — só o token granular configurado acima tem.
 
 O deploy do Storybook (GitHub Pages) acontece automaticamente a cada push em `main`, via `.github/workflows/storybook.yml`.
-
-## Deploy do Storybook no servidor UITEC (react.uitec.com.br)
-
-Segue o [workflow padrão de novo projeto no servidor](.context-ia-dev/workflows/novo-projeto-servidor.md), com o Storybook rodando num container Nginx estático.
-
-**Já feito (bootstrap manual):**
-- Container `componentes-react-storybook` rodando em produção, na rede `psycs-network`, respondendo internamente em `componentes-react-storybook:80`.
-- `Dockerfile`, `docker-compose.prod.yml` e `.github/workflows/deploy-storybook-server.yml` prontos no repositório pra deploys automáticos a partir daqui.
-
-**Pendências (exigem acesso que a automação não tem):**
-1. **Nginx Proxy Manager** — acessar `http://157.230.209.115:81`, criar um Proxy Host: domínio `react.uitec.com.br`, Forward Hostname `componentes-react-storybook`, Forward Port `80`, e ativar SSL (Let's Encrypt).
-2. **DNS** — criar registro A de `react.uitec.com.br` apontando para `157.230.209.115`.
-3. **Formalizar em `/opt/apps/`** (opcional, pra deploy automático via CI): como root/sudo no servidor, `mkdir -p /opt/apps/componentes-react/prod && chown -R deploy:deploy /opt/apps/componentes-react` e copiar `docker-compose.prod.yml` pra lá. Sem esse passo, o container atual continua funcionando, mas o workflow `deploy-storybook-server.yml` (que espera `/opt/apps/componentes-react/prod/`) só vai funcionar depois disso.
-4. Autenticar o usuário `deploy` no GHCR com PAT `ghp_...` (`read:packages`, sem expiração) e adicionar `SSH_PRIVATE_KEY` nos secrets do repositório GitHub — necessário só se for usar o deploy automático via Actions.
