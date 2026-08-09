@@ -13,3 +13,18 @@ export {
 } from "./dialog";
 export { Popover, PopoverTrigger, PopoverContent, PopoverAnchor } from "./popover";
 export { ScrollArea, ScrollBar } from "./scroll-area";
+export {
+  KanbanBoard,
+  KanbanCard,
+  KanbanCards,
+  KanbanHeader,
+  KanbanProvider,
+} from "./kanban";
+export type {
+  KanbanBoardProps,
+  KanbanCardProps,
+  KanbanCardsProps,
+  KanbanHeaderProps,
+  KanbanProviderProps,
+  DragEndEvent,
+} from "./kanban";
