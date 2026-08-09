@@ -2,7 +2,7 @@
 
 Design system React da UITEC — biblioteca de componentes de UI (atoms/molecules) compartilhada entre projetos, extraída do ayla-painel.
 
-📖 **Styleguide (Storybook):** [react.uitec.com.br](https://react.uitec.com.br) (servidor UITEC) — também publicado no GitHub Pages deste repositório a cada `push` em `main`, ou rode `pnpm storybook` localmente.
+📖 **Styleguide (Storybook):** [uiteec.github.io/componentes-react](https://uiteec.github.io/componentes-react/) (GitHub Pages, publicado a cada `push` em `main`), ou rode `pnpm storybook` localmente.
 
 ## Instalação
 
