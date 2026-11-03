@@ -303,7 +303,9 @@ export const KanbanProvider = <
     const itemsInTargetColumn = newData.filter((item) => item.column === overColumn);
     const lastItemInTargetColumn = itemsInTargetColumn[itemsInTargetColumn.length - 1];
 
-    if (lastItemInTargetColumn) {
+    if (overItem) {
+      newData.splice(newData.findIndex((item) => item.id === overItem.id), 0, movedItem);
+    } else if (lastItemInTargetColumn) {
       const lastIndex = newData.findIndex((item) => item.id === lastItemInTargetColumn.id);
       newData.splice(lastIndex + 1, 0, movedItem);
     } else {
