@@ -20,7 +20,7 @@ jobs:
 
       - uses: actions/setup-node@v4
         with:
-          node-version: 20
+          node-version: 24
           cache: pnpm
           registry-url: https://registry.npmjs.org
 
@@ -28,6 +28,7 @@ jobs:
       - run: pnpm run typecheck
       - run: pnpm run build
 
+      # Trusted Publishing (OIDC): sem token. Requer npm >= 11.5.1 e o
+      # trusted publisher configurado em npmjs.com > pacote > Settings.
+      - run: npm install -g npm@latest
       - run: npm publish --access public
-        env:
-          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
