@@ -77,6 +77,19 @@ export function DateInputAtom({
 
   const containerRef = useRef<HTMLDivElement>(null);
   const dropdownRef  = useRef<HTMLDivElement>(null);
+  const valueAnterior = useRef(value);
+
+  useEffect(() => {
+    if (value === valueAnterior.current) return;
+    valueAnterior.current = value;
+    if (displayToISO(text) === value) return;
+    setText(isoToDisplay(value));
+    const novo = parseISO(value);
+    if (novo) {
+      setViewYear(novo.year);
+      setViewMonth(novo.month);
+    }
+  }, [value, text]);
 
   useEffect(() => {
     if (!open) return;
