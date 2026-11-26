@@ -61,7 +61,7 @@ export function FiltroAtom({
         </button>
       </PopoverTrigger>
 
-      <PopoverContent align="start" sideOffset={6} className="w-auto min-w-72 p-0">
+      <PopoverContent align="start" sideOffset={6} className="w-auto min-w-72 max-h-(--radix-popover-content-available-height) overflow-y-auto p-0">
         {/* Header */}
         <div className="flex items-center justify-between border-b border-background-divisor px-4 py-3">
           <span className="text-sm font-semibold text-font-default">Filtros avançados</span>
